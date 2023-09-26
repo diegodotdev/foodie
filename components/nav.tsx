@@ -33,17 +33,14 @@ export default function Nav() {
         <button className="md:hidden" onClick={() => setActive(!active)}>
           <X
             size="15px"
-            className={cn(
-              "rotate-45 duration-[.5s]",
-              active ? "rotate-0" : "rotate-45"
-            )}
+            className={cn("duration-[.5s]", active ? "rotate-0" : "rotate-45")}
           />
         </button>
       </div>
       <div
         className={cn(
-          "fixed bottom-0 right-0 w-full h-[88vh] bg-[#121212] duration-[.5s] flex flex-col gap-10 justify-center items-center md:hidden",
-          active ? "translate-y-0" : "translate-y-[100%]"
+          "fixed top-[12vh] right-0 w-full h-[88vh] bg-[#121212] duration-[.5s] flex flex-col gap-10 justify-center items-center md:hidden",
+          active ? "translate-x-0" : "translate-x-[100%]"
         )}
       >
         {navLinks.map((link) => (
