@@ -31,7 +31,7 @@ export default function Slider() {
           </div>
         ))}
       </Carousel>
-      <div className="absolute top-0 right-0 bg-[#121212]/90 w-full h-full grid place-items-center">
+      <div className="absolute top-0 right-0 bg-[#121212]/90 w-full h-[88vh] grid place-items-center">
         <p className="text-5xl font-[600] text-[#f0f0f0] text-center">
           Find What You Need
         </p>
