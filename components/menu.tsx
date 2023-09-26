@@ -11,7 +11,7 @@ export default function Menu() {
   return (
     <div
       className={cn(
-        "fixed bottom-0 right-0 w-full h-[88vh] z-100 duration-[.5s] bg-[#121212] flex flex-col justify-center items-center gap-10",
+        "fixed bottom-0 right-0 w-full h-[88vh] z-10 duration-[.5s] bg-[#121212] flex flex-col justify-center items-center gap-10",
         initial ? "translate-y-0" : "translate-y-[100%]"
       )}
     >

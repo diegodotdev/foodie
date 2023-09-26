@@ -13,7 +13,7 @@ export default function Nav() {
   const { initial, handleInitial } = useActiveStore();
 
   return (
-    <div className="w-full h-[12vh] grid place-items-center bg-[#121212] text-[#f0f0f0] relative">
+    <div className="sticky top-0 right-0 z-100 w-full h-[12vh] grid place-items-center bg-[#121212] text-[#f0f0f0]">
       <div className="w-[90vw] flex justify-between items-center">
         <Link href="/">
           <span className={cn(pacifico.className, "text-4xl")}>Foodie</span>
