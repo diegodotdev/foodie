@@ -12,10 +12,15 @@ const pacifico = Yellowtail({ subsets: ["latin"], weight: ["400"] });
 export default function Nav() {
   const { initial, handleInitial } = useActiveStore();
 
+  const handleLogo = () => {
+    if (initial) {
+      handleInitial();
+    }
+  };
   return (
-    <div className="sticky top-0 right-0 z-100 w-full h-[12vh] grid place-items-center bg-[#121212] text-[#f0f0f0]">
+    <div className="sticky top-0 right-0 z-10 w-full h-[12vh] grid place-items-center bg-[#121212] text-[#f0f0f0]">
       <div className="w-[90vw] flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" onClick={handleLogo}>
           <span className={cn(pacifico.className, "text-4xl")}>Foodie</span>
         </Link>
         <nav className="hidden md:flex items-center gap-10">
@@ -26,10 +31,7 @@ export default function Nav() {
           ))}
         </nav>
         <button className="md:hidden" onClick={handleInitial}>
-          <X
-            size="15px"
-            className={cn("duration-[.5s]", initial ? "rotate-0" : "rotate-45")}
-          />
+          <X size="15px" className="rotate-45" />
         </button>
       </div>
     </div>
