@@ -12,7 +12,7 @@ export default function Menu() {
   return (
     <div
       className={cn(
-        "fixed bottom-0 right-0 w-full h-screen z-50 duration-[.5s] bg-[#121212]",
+        "fixed bottom-0 right-0 w-full h-screen z-50 duration-[.5s] bg-[#121212] md:hidden",
         initial ? "translate-y-0" : "translate-y-[100%]"
       )}
     >
